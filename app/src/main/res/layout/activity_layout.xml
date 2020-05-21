@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/profile_screen_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/shape_rectangle_round_white"
+        android:src="@drawable/scenery"/>
+
+    <EditText
+        android:id="@+id/profile_name"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/profile_screen_image"
+        android:layout_marginTop="50dp"
+        android:hint="name"
+        android:enabled="false"/>
+
+    <EditText
+        android:id="@+id/profile_phone"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/profile_name"
+        android:layout_marginTop="40dp"
+        android:hint="phone number"
+        android:enabled="false"
+        />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/calendar"
+        android:layout_below="@+id/profile_phone"
+        android:layout_alignLeft="@+id/profile_phone"
+        android:id="@+id/calendar_image"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/time_text"
+        android:layout_below="@+id/calendar_image"
+        android:layout_marginTop="15dp"
+        android:enabled="false"/>
+</RelativeLayout>
